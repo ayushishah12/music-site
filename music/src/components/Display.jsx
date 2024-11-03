@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import DisplayHome from './DisplayHome'
 import DisplayAlbum from './DisplayAlbum'
 import { albumsData } from '../assets/assets'
+import Playlist from './Playlist'
 
 const Display = () => {
   const display=useRef();
@@ -17,7 +18,7 @@ const Display = () => {
   }
   else
   {
-     display.current.style.background=`#121212`
+     display.current.style.background=`linear-gradient(${bgColor},black)`
   }
  })
   return (
@@ -25,6 +26,7 @@ const Display = () => {
       <Routes>
         <Route path='/' element={<DisplayHome/>}></Route>
         <Route path='/album/:id' element={<DisplayAlbum/>}></Route>
+        <Route path='/playlist' element={<Playlist/>}></Route>
       </Routes>
     </div>
   )
