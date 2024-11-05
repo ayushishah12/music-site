@@ -85,6 +85,8 @@ import watch_song from  './watch_song.mp3'
 import watch from './watch.jpg'
 import shreya from './shreya.jpg'
 import bg from './bg.jpg'
+import avatar from './avatar.jpeg'
+import sound from './sound.jpeg'
 
 export const assets = {
     bell_icon,
@@ -143,7 +145,7 @@ export const assets = {
     smg_song,sonu,
     teri,teri_song,that,that_song,
     tuna,tuna_song,
-    watch,watch_song,shreya,bg
+    watch,watch_song,shreya,bg,avatar,sound
 
 
 }
