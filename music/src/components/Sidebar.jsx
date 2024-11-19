@@ -76,13 +76,13 @@ const navigate = useNavigate();
                 <img className='w-5' src={assets.plus_icon} alt=""/>
             </div>
         </div>
-        <div className='p-4 bg-slate-800 m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4'>
+        <div className='p-4 bg-slate-800 m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4 '>
             <h1>Create your first playlist</h1>
-            <p className='font-light'>It's easy we will help you</p>
+            <p className='font-light'>Craft the soundtrack to your story!</p>
             <button onClick={()=>(navigate("/playlist"))} className='px-4 py-1.5 hover:bg-slate-400 bg-black text-[15px] text-white rounded-full mt-4'>Create playlist</button>
         </div>
         <div>
-          <img className='h-[18rem] w-[50rem]' src={assets.avatar}/>
+          <img className='h-[18rem] w-[40rem]' src={assets.avatar}/>
         </div>
         
       </div>

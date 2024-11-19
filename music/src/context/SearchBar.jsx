@@ -63,7 +63,7 @@ const SearchBar = () => {
       />
 
       {isDropdownVisible && filteredSongs.length > 0 && (
-        <div ref={dropdownRef} className='absolute bg-slate-50 border rounded-b-2xl mt-1 w-full max-h-40 overflow-y-auto z-10'>
+        <div ref={dropdownRef} className='absolute bg-slate-400 border rounded-b-2xl mt-1 w-full max-h-40 overflow-y-auto z-10'>
           {filteredSongs.map((song, index) => (
             <div
               key={index}

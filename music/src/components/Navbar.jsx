@@ -23,6 +23,7 @@ const Navbar = () => {
 
           <SearchBar />
         </div>
+        
         <div className='flex items-center gap-2'>
 
 
@@ -30,6 +31,12 @@ const Navbar = () => {
             A
           </p>
         </div>
+        
+      </div>
+      <div className='flex items-center gap-2 mt-4'>
+      <p onClick={()=>navigate('/music')} className='bg-black text-white px-4 py-1 rounded-2xl cursor-pointer'>All</p>
+        <p onClick={()=>navigate('/music')} className=' px-4 py-1 rounded-2xl cursor-pointer bg-black text-white'>Music</p>
+
       </div>
 
     </>
