@@ -62,7 +62,7 @@ const navigate = useNavigate();
         
       </div>
       <div className='bg-slate-900 h-[85%] rounded'>
-      <div onClick={()=>navigate('/')} className='flex items-center gap-3 pl-4 cursor-pointer'>
+      <div onClick={()=>navigate('/Home')} className='flex items-center gap-3 pl-4 cursor-pointer'>
             <img className='w-9 pt-5 ' src={assets.home_icon} alt=""/>
             <p className='pt-5  w-20 font-bold'>Home</p>
             
@@ -93,7 +93,7 @@ const navigate = useNavigate();
             <button onClick={()=>(navigate("/playlist"))} className='px-4 py-1.5 hover:bg-slate-400 bg-black text-[15px] text-white rounded-full mt-4'>Create playlist</button>
         </div>
         <div>
-          <img className='h-[18rem] w-[40rem]' src={assets.avatar}/>
+          <img className='h-[16rem] w-[40rem]' src={assets.avatar}/>
         </div>
         
       </div>

@@ -26,7 +26,7 @@ const Navbar = () => {
         
         <div className='flex items-center gap-2'>
 
-
+          <p onClick={()=>navigate('/Help')} className='hover:underline text-white '>Help</p>
           <p className='bg-purple-400 text-white w-9 h-9 rounded-full flex items-center justify-center'>
             A
           </p>

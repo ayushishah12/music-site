@@ -6,6 +6,8 @@ import { albumsData } from '../assets/assets'
 import Playlist from './Playlist'
 import Music from  './Music'
 import Review from './Review'
+import Help from './Help'
+
 
 const Display = () => {
   const display=useRef();
@@ -26,14 +28,17 @@ const Display = () => {
   return (
     <div ref={display} className='w-[100%] m-2 px-6 pt-4 rounded bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml-0'>
       <Routes>
-        <Route path='/' element={<DisplayHome/>}></Route>
+        
+        <Route path="/Home" element={<DisplayHome/>}></Route>
         <Route path='/album/:id' element={<DisplayAlbum/>}></Route>
         <Route path='/playlist' element={<Playlist/>}></Route>
         <Route path='/music' element={<Music/>}/>
         <Route path='/Review' element={<Review/>}/>
+       <Route path='/Help' element={<Help/>}/>
       </Routes>
     </div>
   )
 }
 
 export default Display
+
